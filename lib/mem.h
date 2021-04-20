@@ -7,6 +7,12 @@
  * 
  * 2. Variants that 'assert' the result is non-NULL;
  *    if NULL occurs, kick out an error and die.
+ * 
+ * 3. A generic 'assert' function that checks a given pointer and,
+ *    if NULL, kicks out an error and exits; otherwise it passes
+ *    the pointer through to its return value.  Useful in code
+ *    that needs to defensively check function parameters that
+ *    "should never be NULL".
  *
  * David Kotz, April 2016, 2017, 2019, 2021
  */
