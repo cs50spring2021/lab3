@@ -44,7 +44,7 @@ counters_t* counters_new(void);
  *   the new value of the counter related to the indicated key.
  *   0 on error (if ctrs is NULL or key is negative)
  * We guarantee:
- *   counter values will always be >= 1.
+ *   the counter's value will be >= 1, on successful return.
  * We do:
  *  ignore if ctrs is NULL or key is negative.
  *  if the key does not yet exist, create a counter for it and initialize to 1.
