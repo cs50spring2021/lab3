@@ -26,3 +26,4 @@ file.o: file.h
 clean:
 	rm -rf *.dSYM  # MacOS debugger info
 	rm -f *~ *.o
+	rm -f core

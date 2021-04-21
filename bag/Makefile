@@ -36,4 +36,4 @@ clean:
 	rm -rf *.dSYM  # MacOS debugger info
 	rm -f *~ *.o
 	rm -f bagtest
-
+	rm -f core
